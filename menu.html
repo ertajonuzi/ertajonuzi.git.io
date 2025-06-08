@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Jonuzi²</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f1e1; /* Ngjyrë panë (e butë) */
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6a4c3c;
+            font-size: 3em;
+            margin-bottom: 30px;
+        }
+
+        .menu-section {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hije për kategori */
+        }
+
+        .menu-section h2 {
+            font-size: 2em;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            background-color: #6a4c3c; /* Ngjyra për titujt */
+            border-radius: 8px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item img {
+            width: 120px;  /* Rritur madhësia e fotove */
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px; /* Hapesirë më e madhe midis tekstit dhe fotos */
+        }
+
+        .menu-item span {
+            font-size: 1.2em;
+            flex: 1; /* Lejon që emri dhe çmimi të shtrihen dhe të jenë të balancuar */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #6a4c3c;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Ngjyra për cdo kategori */
+        .sushi {
+            background-color: #ffcc99; /* Ngjyrë për sushi */
+        }
+
+        .spaghetti {
+            background-color: #99ff99; /* Ngjyrë për spaghetti */
+        }
+
+        .embelsira {
+            background-color: #ff99cc; /* Ngjyrë për embëlsira */
+        }
+
+        .pije {
+            background-color: #c2c2f0; /* Ngjyrë për pije */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #6a4c3c;
+            color: white;
+        }
+
+        td {
+            background-color: #fff7e6;
+        }
+
+        .menu-item-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .menu-item-container div {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Menu - Jonuzi²</h1>
+
+        <!-- Sushi Section -->
+        <div class="menu-section sushi">
+            <h2>Sushi</h2>
+            <div class="menu-item-container">
+                <div class="menu-item">
+                    <img src="https://knifeandsoul.com/wp-content/uploads/2022/09/crunchy-roll-sushi-recipe-recipe-card.jpg" alt="Sushi Crispy">
+                    <span>Sushi Crispy</span>
+                    <span>2000 lekë</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.sbfoods-worldwide.com/recipes/q78eit00000004lp-img/5_Dragonroll_Wasabi_ichiran.jpg" alt="Sushi Avocado">
+                    <span>Sushi Avocado</span>
+                    <span>1200 lekë</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://freshchoice.imgix.net/assets/recipes/1805-sushi-rainbow-rolls.jpg?&ch=Width,DPR&fit=crop&auto=format%2C%20compress&q=70" alt="Rainbow Sushi">
+                    <span>Rainbow Sushi</span>
+                    <span>2500 lekë</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spaghetti Section -->
+        <div class="menu-section spaghetti">
+            <h2>Spagheti</h2>
+            <div class="menu-item-container">
+                <div class="menu-item">
+                    <img src="https://cookingwithelo.com/wp-content/uploads/2022/06/Pasta-al-pesto.jpg" alt="Spaghetti Pesto">
+                    <span>Spaghetti Pesto</span>
+                    <span>1200 lekë</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.woolworths.co.nz/Content/Recipes/230232-Classic-SpagBol_810x520.jpg" alt="Spaghetti Bolognese">
+                    <span>Spaghetti Bolognese</span>
+                    <span>1500 lekë</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Embëlsira Section -->
+        <div class="menu-section embelsira">
+            <h2>Embëlsira</h2>
+            <div class="menu-item-container">
+                <div class="menu-item">
+                    <img src="https://www.jocooks.com/wp-content/uploads/2018/11/cheesecake-1-22.jpg" alt="Cheesecake">
+                    <span>Cheesecake</span>
+                    <span>2000 lekë</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy_choc_biscuits-59ca9be.jpg" alt="Biskota">
+                    <span>Biskota</span>
+                    <span>400 lekë</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/12/Lemon-layer-cake-d2a2df0.jpg" alt="Torte">
+                    <span>Torte</span>
+                    <span>1500 lekë</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://norsecare.co.uk/wp-content/uploads/2023/03/5-delicious-fruits-with-great-health-benefits.png" alt="Fruta">
+                    <span>Fruta</span>
+                    <span>900 lekë</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pije Section -->
+        <div class="menu-section pije">
+            <h2>Pije</h2>
+            <div class="menu-item-container">
+                <div class="menu-item">
+                    <img src="http://wineclub.ca/cdn/shop/articles/good-white-wine-for-a-gift_520x500_13b4f409-3baa-4b97-ab65-79d74447ddb8.jpg?v=1748480769" alt="Vere e Bardhë">
+                    <span>Vere e Bardhë</span>
+                    <span>2500 lekë</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://sulavineyards.com/images/media2/source-wines/source-cabernet-sauvignon.webp" alt="Vere e Kuqe">
+                    <span>Vere e Kuqe</span>
+                    <span>3000 lekë</span>
